@@ -6,6 +6,17 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <title>Sushiloe Quellon - Disfruta los mejores sushi de Chiloe</title>
 
+
+
+<?php 
+
+
+function isMobile() {
+  return preg_match("/(android|avantgo|blackberry|bolt|boost|cricket|docomo|fone|hiptop|mini|mobi|palm|phone|pie|tablet|up\.browser|up\.link|webos|wos)/i", $_SERVER["HTTP_USER_AGENT"]);
+}
+
+
+?>
 <!-- Google fonts -->
 <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,700' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
@@ -119,6 +130,25 @@
 <!-- Cirlce Starts -->
 <div id="menu"  class="container spacer about">
 <h2 class="text-center wowload fadeInUp">Reserva tus pedidos a (65) 2680682 </h2>  
+
+<div class="row">
+  <?php 
+  
+  // Use the function
+        if(isMobile()){
+          echo "<a href='tel:652680682' class='btn btn-primary' style='background-color:green' type='submit'><i class='fa fa-phone'></i> Llamar Ahora! Presione Aqui</a>";
+        }
+        else {
+         
+        }
+  ?>
+
+  
+  
+</div>
+
+<br/>
+
   <div class="row">
   <div class="col-sm-6 wowload fadeInLeft">
     <h4><i class="fa fa-camera-retro"></i> Bienvenidos a nuestro portal web </h4>
@@ -266,11 +296,7 @@ Tempura chiken 9 piezas (pollo, palta, philadelphia). +
 
         <div class="clearfix food-list"><div class="pull-left"></div><span class="pull-right">$ 8200</span><p>Pizza Ramones <br>(Queso, Hamburguesa, Tocino, Jamon, Salame y Extra Queso)</p></div>
 
-          <div class="clearfix food-list"><div class="pull-left"></div><span class="pull-right">$ 8790</span><p>Pizza Marina <br>(Queso, salmón ahumado, camarones, morrón,
-cebolla y choclo)</p></div>
-
-        <div class="clearfix food-list"><div class="pull-left"></div><span class="pull-right">$ 8790</span><p>Pizza Familiar a tu Gusto<br> (4 ingredientes (incluye QUeso y salsa)</p></div>
-
+       
         <!-- ETIQUETAS INDIVIDUALES ORIGINAL
         <div class="clearfix food-list"><div class="pull-left">Tea/Coffee</div><span class="pull-right">$ 10.00</span></div>
         -->
@@ -306,7 +332,7 @@ cebolla y choclo)</p></div>
 
 
 
-        
+             <!-- Sandwich Lomo-->
 
         <p><b>Sandwich de Lomo de Cerdo</b></p>
 
@@ -320,35 +346,29 @@ cebolla y choclo)</p></div>
 
               <div class="clearfix food-list"><div class="pull-left"></div><span class="pull-right">$ 4990</span> <p>Lomito Alemán <br>(Lomito, chucrut, tomate y mayo a elección)<p></div>
 
-               <div class="clearfix food-list"><div class="pull-left"></div><span class="pull-right">$ 4990</span> <p>Lomito Livianito <br>(Lomito, lechuga, palmitos, choclo y mayo a elección)<p></div>
-
+     <!-- Sandwich Pollo-->
           <p><b>Sandwich de Pollo</b></p>
-        <div class="clearfix food-list"><div class="pull-left"></div><span class="pull-right">$ 4590</span> <p>Pollo Kentucky Apanado <br>(Pechuga de Pollo Apanada, Tomate, Palta y mayo a elección.)<p></div>
+        <div class="clearfix food-list"><div class="pull-left"></div><span class="pull-right">$ 4990</span> <p>Pollo Kentucky Apanado <br>(Pechuga de Pollo Apanada, Tomate, Palta y mayo a elección.)<p></div>
 
-        <div class="clearfix food-list"><div class="pull-left"></div><span class="pull-right">$ 4590</span> <p>Pollo Suizo <br>(Pehuga de Pollo a la plancha, salame, jamon, queso y mayo a elección)<p></div>
+        <div class="clearfix food-list"><div class="pull-left"></div><span class="pull-right">$ 4990</span> <p>Pollo Suizo <br>(Pehuga de Pollo a la plancha, salame, jamon, queso y mayo a elección)<p></div>
 
-        <div class="clearfix food-list"><div class="pull-left"></div><span class="pull-right">$ 4590</span> <p>Pollo Light <br>(Pechuga de pollo a la plancha, palmito, lechuga y mayo a elección)<p></div>
-        
-        <p><b>Sandwich Premium</b></p>
-          <div class="clearfix food-list"><div class="pull-left"></div><span class="pull-right">$ 5800</span> <p>Salmon Ahumado <br>(queso philadelphia, lechuga de huerta, aros de
+       
+        <!-- Sandwich premium-->
+        <p><b>Sandwich del Mar</b></p>
+          <div class="clearfix food-list"><div class="pull-left"></div><span class="pull-right">$ 5800</span> <p>Salmon <br>(queso philadelphia, lechuga de huerta, aros de
 cebolla morada, mayonesa a elección)<p></div>
 
-      <p><b>Sandwich Premium</b></p>
-          <div class="clearfix food-list"><div class="pull-left"></div><span class="pull-right">$ 4990</span> <p>Lomitos de Atún <br>
+   <div class="clearfix food-list"><div class="pull-left"></div><span class="pull-right">$ 4990</span> <p>Lomitos de Atún <br>
             (Lomitos de atún, palta, lechuga, choclo,
 palmitos y mayonesa a elección)<p></div>
 
-       <div class="clearfix food-list"><div class="pull-left"></div><span class="pull-right">$ 8950</span> <p>Cerdito Valiente<br>
-        (Lomo de cerdo jugoso con Repollo, aritos de
-          cebolla, lechuga, tomate, queso y mayonesa a
-          elección)<p>
-          </div>
 
-              <div class="clearfix food-list"><div class="pull-left"></div><span class="pull-right">$ 8950</span> <p>La Vacuna<br>
-       (Lomo Grill con lechuga, palta, tomate,
-pepinillos, tocino, cebolla salteada y queso
-fundido)<p>
-          </div>
+    
+         
+
+    
+
+             
       </div>
     </div>
   </div>
@@ -386,6 +406,20 @@ salame, tomate, lechuga y mayo a elección)<p>
          </span>
           <p>Hamburguesa de Soya<br>(hamburguesa de soya, tomate, palta y
 mayo a elección)<p>
+         </div>
+
+
+            <div class="clearfix food-list"><div class="pull-left"></div><span class="pull-right">
+         $ 5500
+         </span>
+          <p>Hamburguesa Americana<br>(Doble Hamburguesa, Queso Cheddar,aros de cebolla, tocino, pepinillos y mayonesa a elección)<p>
+         </div>
+
+
+            <div class="clearfix food-list"><div class="pull-left"></div><span class="pull-right">
+         $ 4000
+         </span>
+          <p>Hamburguesa Queso<br>(hamburguesa de 225 gramos y queso cheddar)<p>
          </div>
 
 
@@ -490,7 +524,7 @@ tomate)<p>
 
 
                 <div class="clearfix food-list"><div class="pull-left"></div><span class="pull-right">
-         $ 2500
+         $ 3000
          </span>
          <p>
          Papas Fritas<br>
@@ -498,7 +532,7 @@ tomate)<p>
          </div>
 
                     <div class="clearfix food-list"><div class="pull-left"></div><span class="pull-right">
-         $ 3500
+         $ 4000
          </span>
          <p>
          Papas Fritas Carne o Pollo<br>
@@ -512,6 +546,85 @@ tomate)<p>
          Papas Fritas Carne o Pollo y Palta con Tomate<br>
           <p>
          </div>
+
+
+         <!--Para picar nuevos -->
+         <div class="clearfix food-list"><div class="pull-left"></div><span class="pull-right">
+         $ 4900
+         </span>
+         <p>
+         Papas Fritas Carne o Pollo y Champiñones<br>
+          <p>
+         </div>
+
+ <div class="clearfix food-list"><div class="pull-left"></div><span class="pull-right">
+         $ 4500
+         </span>
+         <p>
+         Papas Fritas Palta, Queso y Champiñones<br>
+          <p>
+         </div>
+
+
+<div class="clearfix food-list"><div class="pull-left"></div><span class="pull-right">
+         $ 9800
+         </span>
+         <p>
+         Papas Camaron Machete<br>
+         (Papas fritas rústicas, camarones ecuatorianos, cebolla, champiñones, crema, morrón, queso fundido y palta)
+          <p>
+         </div>
+
+<div class="clearfix food-list"><div class="pull-left"></div><span class="pull-right">
+         $ 6000
+         </span>
+         <p>
+         Ceviche de salmón<br>
+         
+          <p>
+         </div>
+
+         <div class="clearfix food-list"><div class="pull-left"></div>
+          <span class="pull-right">
+            $ 6000
+          </span>
+          <p>
+            Chupe de Jaiva<br>
+          <p>
+         </div>
+
+
+             <div class="clearfix food-list"><div class="pull-left"></div>
+          <span class="pull-right">
+            $ 7500
+          </span>
+          <p>
+            Camarones Ecuatorianos Apanados<br>
+            (12 unidades)
+          <p>
+         </div>
+
+    <div class="clearfix food-list"><div class="pull-left"></div>
+          <span class="pull-right">
+            $ 8500
+          </span>
+          <p>
+            Tempura Acevichado<br>
+            (Camarón, queso, palta, cebollín y encevichado)
+          <p>
+         </div>
+
+
+<div class="clearfix food-list"><div class="pull-left"></div>
+          <span class="pull-right">
+            $ 9800
+          </span>
+          <p>
+            Papas a la chilena<br>
+            (Papas fritas rústicas, mix de carnes cerdo, pollo , vacuno y cebolla.)
+          <p>
+         </div>
+         <!--Cierra categoria de para picar-->
       </div>
     </div>
   </div>
@@ -646,25 +759,7 @@ galletitas y pepinillos)<p>
           <p>ROLLITOS PRIMAVERA<br>(6 Unid.)<p>
          </div>
 
-              <div class="clearfix food-list"><div class="pull-left"></div><span class="pull-right">
-         $ 4800
-         </span>
-          <p>BOLAS DE ARROZ FRITAS EN PANKO<br>(6 Unid. relleno de
-              Queso Philadelphia
-              2 Pollo-Champiñón
-              2 Salmón Ahumado
-              2 Camarón-Cebollín)<p>
-         </div>
-
-                 <div class="clearfix food-list"><div class="pull-left"></div><span class="pull-right">
-         $ 9000
-         </span>
-          <p>BOLAS DE ARROZ FRITAS EN PANKO<br>(12 Unid. relleno de
-              Queso Philadelphia
-              4 Pollo-Champiñón
-              4 Salmón Ahumado
-              4 Camarón-Cebollín)<p>
-         </div>
+             
       </div>
     </div>
   </div>
