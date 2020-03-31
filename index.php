@@ -4,8 +4,29 @@
 <meta charset="UTF-8" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<title>Sushiloe Quellon - Disfruta los mejores sushi de Chiloe</title>
+<title>Sushiloe Quellón - Tus pedidos a (65)2680682</title>
+<meta name="description" content="Sushi,Sandwich,Tablas y mucho mas, ahora con delivery." />
+<style>
+  .float{
+  position:fixed;
+  width:60px;
+  height:60px;
+  bottom:40px;
+  right:40px;
+  background-color:#25d366;
+  color:#FFF;
+  border-radius:50px;
+  text-align:center;
+  font-size:30px;
+  box-shadow: 2px 2px 3px #999;
+  z-index:100;
+}
 
+.my-float{
+  margin-top:16px;
+}
+
+</style>
 
 
 <?php 
@@ -136,7 +157,8 @@ function isMobile() {
   
   // Use the function
         if(isMobile()){
-          echo "<a href='tel:652680682' class='btn btn-primary' style='background-color:green' type='submit'><i class='fa fa-phone'></i> Llamar Ahora! Presione Aqui</a>";
+          echo "<a href='tel:652680682' class='btn btn-primary'  type='submit'><i class='fa fa-phone'></i> Llamar Ahora! Presione Aquí</a><br><br>";
+           echo "<a href='https://api.whatsapp.com/send?phone=56998554381&text=Hola%20quisiera%20realizar%20algun%20pedido%20de%20la%20carta' class='btn btn-primary' style='background-color:green' type='submit'><i class='fa fa-whatsapp' target='_blank'></i> Pedir por Whatsapp! Presione Aquí</a>";
         }
         else {
          
@@ -151,10 +173,11 @@ function isMobile() {
 
   <div class="row">
   <div class="col-sm-6 wowload fadeInLeft">
-    <h4><i class="fa fa-camera-retro"></i> Bienvenidos a nuestro portal web </h4>
-    <p>Ven a probar los mejores sushi de la isla de Chiloé, con calidad "La cabaña", en el primer restaurante de sushi y delivery en Quellón, Chiloé.</p>
 
-    <h4><i class="fa fa-usd"></i>Promociones:</h4> 
+      <h4><i class="fa fa-camera-retro"></i> <b>Bienvenidos a nuestro portal web </b></h4>
+    <p>Ven a probar los mejores sándwich, pizzas, lomos a lo pobre, woks,sushis, ceviches,empanadas, cerveza artesanal, tragos preparados, jugos naturales, y mucho mas.</p>
+
+    <h4><i class="fa fa-usd"></i><b>Promociones:</b></h4>
 
 <p><b>Tabla para compartir (3 personas Aprox)</b> 
 Incluye:
@@ -235,7 +258,7 @@ Tempura chiken 9 piezas (pollo, palta, philadelphia). +
 
   <div class="col-sm-6 wowload fadeInRight">
     
-     <h4><i class="fa fa-bars"></i> Nuestra Carta:</h4>
+      <h4><i class="fa fa-bars"></i> <b>Nuestra Carta:</b></h4>
 
       <!-- menus -->
       <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
@@ -1181,7 +1204,7 @@ galletitas y pepinillos)<p>
 <a href="http://www.sushiloe.cl">Diseño Web Sushiloe - Quellon</a><br>
 <a href="https://www.zoho.com/mail/login.html">WebMail</a>
 <!-- # Footer Ends -->
-<a href="#home" class="gototop "><i class="fa fa-angle-up  fa-3x"></i></a>
+<!--<a href="#home" class="gototop "><i class="fa fa-angle-up  fa-3x"></i></a>-->
 
 </div>
 
@@ -1198,7 +1221,10 @@ galletitas y pepinillos)<p>
     <a class="close">×</a>
     <!-- The modal dialog, which will be used to wrap the lightbox content -->    
 </div>
-
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<a href="https://api.whatsapp.com/send?phone=56998554381&text=Hola%20quisiera%20realizar%20algun%20pedido%20de%20la%20carta" class="float" target="_blank">
+<i class="fa fa-whatsapp my-float"></i>
+</a>
 
 
 <!-- jquery -->
